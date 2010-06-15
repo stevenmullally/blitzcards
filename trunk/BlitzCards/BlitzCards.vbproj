@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD2F8EC0-D2EE-4106-9721-D2007DA9FB3C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BlitzCards</RootNamespace>
+    <AssemblyName>BlitzCards</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BlitzCards.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BlitzCards.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardGraphics.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twodiamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twodiamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twohearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twoheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twospades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twospadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acediamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acediamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acehearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acespades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acespadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueback.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluebacki.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eightclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eightclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eightdiamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eightdiamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eighthearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eightheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eightspades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eightspadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiveclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiveclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fivediamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fivediamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fivehearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fiveheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fivespades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fivespadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fourclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fourclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fourdiamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fourdiamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fourhearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fourheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fourspades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fourspadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jackclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jackclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jackdiamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jackdiamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jackhearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jackheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jackspades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jackspadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingdiamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingdiamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kinghearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingspades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingspadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nineclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nineclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninediamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninediamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninehearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nineheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninespades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninespadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queenclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queenclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queendiamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queendiamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queenhearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queenheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queenspades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queenspadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sevenclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sevenclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sevendiamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sevendiamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sevenhearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sevenheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sevenspades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sevenspadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sixclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sixclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sixdiamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sixdiamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sixhearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sixheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sixspades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sixspadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tendiamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tendiamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenhearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenspades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenspadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\threeclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\threeclubsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\threediamonds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\threediamondsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\threehearts.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\threeheartsi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\threespades.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\threespadesi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twoclubs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twoclubsi.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
