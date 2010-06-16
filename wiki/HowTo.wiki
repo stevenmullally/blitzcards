@@ -3,7 +3,7 @@
 
 =Introduction=
 
-The BlitzCard library is meant to be used as an open-source alternative to Microsoft's cards.dll. It is used in the same manner that MS's library is used. The library contains a standard deck, 2 through 10, Jack, Queen, King, Ace. There is an invert option to mimic a "highlighted" card. At the moment, there is only one deck pattern availible but can be customized if you choose to add new image resources to the library and recompile.
+The BlitzCards library is meant to be used as an open-source alternative to Microsoft's cards.dll. It is used in the same manner that MS's library is used. The library contains a standard deck, 2 through 10, Jack, Queen, King, Ace. There is an invert option to mimic a "highlighted" card. At the moment, there is only one deck pattern availible but can be customized if you choose to add new image resources to the library and recompile.
 
 =Using BlitzCards In Your Project=
 
