@@ -1,0 +1,1 @@
+An open source alternative for Microsoft's cards.dll library.
